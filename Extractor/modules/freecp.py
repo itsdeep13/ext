@@ -333,6 +333,7 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                 text = ''
                                 all_indices = []
                                 for cnt, course in enumerate(courses):
+                                    id = course['id']
                                     name = course['name']
                                     price = course['finalPrice']
                                     index = cnt + 1
